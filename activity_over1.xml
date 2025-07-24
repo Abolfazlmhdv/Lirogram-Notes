@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:gravity="end"
+    android:layout_margin="0dp"
+    android:elevation="1dp"
+    android:padding="0dp"
+    android:background="@drawable/border_popupwindow"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:elevation="1dp"
+        android:background="@drawable/border_popupwindow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/clickadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layoutDirection="locale"
+            android:background="@drawable/click_item2"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/addover_24"/>
+
+            <LinearLayout
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+               style="@style/AppFontStyle"
+                android:gravity="center"
+                android:text="@string/over1"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/clickcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layoutDirection="locale"
+            android:background="@drawable/click_item3"
+            android:baselineAligned="true"
+            android:padding="11dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/colorrrr_24"/>
+
+            <LinearLayout
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/AppFontStyle"
+                android:gravity="center"
+                android:text="@string/over2"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/clickabout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layoutDirection="locale"
+            android:background="@drawable/click_item"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/aboutme_24"/>
+
+            <LinearLayout
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+              style="@style/AppFontStyle"
+                android:text="@string/over3"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

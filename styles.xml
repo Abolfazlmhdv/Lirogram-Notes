@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownVerticalOffset">-20dp</item>
+
+    </style>
+
+    <style name="AppFontStyle">
+
+        <item name="fontFamily">@font/sansserif2</item>
+    </style>
+</resources>

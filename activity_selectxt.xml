@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@drawable/shapeborder"
+    android:padding="8dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/shapeborder">
+
+        <!-- بخش عنوان و دکمه بستن -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/windows"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <!-- فضای خالی 30dp سمت چپ (شاید جای آیکون) -->
+            <LinearLayout
+                android:id="@+id/closehide"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- متن وسط -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/selecttext"
+                style="@style/AppFontStyle"
+                android:textSize="17sp"
+                android:textColor="@color/textcolor"
+                android:gravity="center" />
+
+            <!-- دکمه بستن -->
+            <ImageView
+                android:id="@+id/closetext"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/clear_24"
+                android:contentDescription="@string/close" />
+        </LinearLayout>
+
+        <!-- خط جداکننده -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lineone" />
+
+        <!-- متن انتخاب شده -->
+        <TextView
+            android:id="@+id/selecttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello Lirogram"
+            android:gravity="center"
+            android:fontFamily="@font/iransans"
+            android:textColor="@color/textcolor"
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:textColorHighlight="#ADA2A2A2"
+            android:textSelectHandle="@color/colorapp" />
+
+    </LinearLayout>
+</LinearLayout>

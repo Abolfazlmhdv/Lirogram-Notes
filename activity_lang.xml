@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shapeborder"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/borderline"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapedialog2"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/shapeborder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/windows"
+            android:orientation="horizontal">
+
+            <TextView
+            android:id="@+id/langen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="@string/lang"
+            android:gravity="center"
+            android:layout_gravity="center"
+                android:padding="8dp"
+            style="@style/AppFontStyle"
+            android:textSize="18sp"
+            android:textColor="@color/textcolor"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineone"/>
+
+
+      <LinearLayout
+          android:id="@+id/linesen"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:foreground="?attr/selectableItemBackground"
+          android:padding="15dp"
+          android:background="@color/windows">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="English"
+              android:textColor="@color/textcolor"
+              android:layout_margin="0dp"
+              android:fontFamily="@font/sansserif2"
+              android:textSize="17sp"/>
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineone"
+            android:layout_marginTop="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/linesfa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/windows"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/textcolor"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:text="فارسی"
+                android:fontFamily="@font/iransans"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineone"
+            android:layout_marginTop="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/linesrus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/windows"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/textcolor"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="Russia"
+                android:fontFamily="@font/sansserif2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/lineone"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/linestueky"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:background="@color/windows"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:fontFamily="@font/sansserif2"
+                android:gravity="left|center"
+                android:text="Turkish"
+                android:textColor="@color/textcolor"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/linenew"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_new"
+                android:baselineAligned="false"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sansserif2"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/newitem"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

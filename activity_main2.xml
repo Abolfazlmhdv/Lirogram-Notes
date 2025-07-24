@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    android:background="@color/backLine"
+    tools:context=".MainActivity2">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@color/colorapp">
+
+        <ImageView
+            android:id="@+id/backclick"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layoutDirection="ltr"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_twe_24"/>
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:layout_gravity="center"
+            android:textDirection="ltr"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:fontFamily="@font/iransans"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/clickvert1"
+            android:layout_width="35dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:src="@drawable/vertwhite_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/eleflines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_message"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/captiontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textDirection="ltr"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/iransans2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
